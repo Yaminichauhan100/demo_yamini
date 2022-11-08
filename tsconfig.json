@@ -1,0 +1,66 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "target": "ES2017",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./build",
+        "rootDir": "./src",
+        "removeComments": true,
+        "strict": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@middlewares": [
+                "middlewares/index"
+            ],
+            "@services": [
+                "services/index"
+            ],
+            "@common": [
+                "common/index"
+            ],
+            "@routes": [
+                "routes/index"
+            ],
+            "@baseRoute": [
+                "routes/base.routes"
+            ],
+            "@controllers": [
+                "controllers/index"
+            ],
+            "@baseController": [
+                "controllers/base.controller"
+            ],
+            "@models/*": [
+                "models/*"
+            ],
+            "@entity": [
+                "entity/index"
+            ],
+            "@builders": [
+                "builders/index"
+            ]
+        },
+        "typeRoots": [
+            "./node_modules/@types",
+        ],
+        "types": [
+            "swagger-express-ts"
+        ],
+        "esModuleInterop": true
+    },
+    "filesGlob": [
+        "src/**/*.ts"
+    ],
+    "strictPropertyInitialization": false
+}
